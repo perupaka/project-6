@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <style>
+             body{
+            background-size:cover;
+                  }
+        </style>
+       
+    <style>
+        
+        /* CSS for styling the navigation menu */
+        nav {
+            background-color: #c98d34;
+            color: white;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .items{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                padding: 30px 20px;
+                grid-column-gap: 20px;
+                grid-row-gap: 30px;
+            }
+            .item img{
+                width:290px;
+                height: 300px;
+                object-fit: cover;
+                cursor:pointer;
+                transition: 0.2s ease;
+            }
+            .item img:hover{
+                transform: scale(1.04);
+            }
+            .item h4{
+                padding: 5px;
+                text-align:left;
+            }
+            .item button{
+                padding:5px 30px;
+                border:none;
+                outline:none;
+                background-color:green;
+                color: white;
+                cursor:pointer;
+                border-radius: 4px;
+                font-size: 20px;
+                display: block;
+            }
+            .item button:hover{
+                transform: scale(1.04);
+            }
+            @media screen and (max-width: 1000px){
+                .items{
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            @media screen and (max-width:768px){
+                .items{
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+           
+    </style>
+       
+       <body>
+          <nav>    
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="about.html">About</a></li> 
+                    
+                    <li><a href="project.html">Registration</a></li>
+                    <li><a href="order.html">order</a></li>
+                    <li><a href="project login.html">login</a></li>  
+                    <li><a href="project contact.html">contact</a></li>
+                  
+            
+                </ul>
+            </nav>
+            
+           
+<header>
+        <h1>Welcome to budget Bytes Website</h1>
+    </header>
+        <!----slide show-->
+        <section>
+            
+            <image class="mySlides" src="c:\Users\LabUser\Downloads\food-2048x1366.jpg"  style="width:100%">
+                <image class="mySlides" src="c:\Users\LabUser\Downloads\cooked-food-1860208.jpg" style="width:100%">
+                    <image class="mySlides" src="c:\Users\LabUser\Desktop\best-vegetarian-food-chennai-india-tamil-nadu-indian-tasty.jpg" style="width:100%">
+        </section>
+        <script>
+       // Automatic Slideshow - change image every 1 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if(myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+    <h1>FOOD VEDIOS</h1>
+ 
+     <video width="300" height="300" controls>
+          <source src="c:\Users\LabUser\Downloads\4092617-uhd_3840_2160_30fps.mp4" type="video/mp4">
+         </video>
+         <video width="300" height="300" controls>
+             <source src="c:\Users\LabUser\Downloads\3245641-uhd_3840_2160_25fps.mp4" type="video/mp4">
+        </video>
+        <video width="300" height="300" controls>
+         <source src="c:\Users\LabUser\Downloads\4224218-hd_1920_1080_25fps.mp4" type="video/mp4">
+    </video>
+    <video width="300" height="300" controls>
+     <source src="c:\Users\LabUser\Downloads\3196344-uhd_3840_2160_25fps.mp4" type="video/mp4">
+ </video>
+            </body>
+            </html>

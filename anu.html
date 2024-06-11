@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport"
+        content="width=device-width,initial-scaled=1">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body {
+                margin:0;
+                font-family:Arial;
+                font-size:17px;
+
+            }
+            #myVideo{
+                position:fixed;
+                right:50;
+                bottom:50;
+                min-width:50%;
+                min-height:50%;
+
+            }
+            .content{
+                width:200px;
+                font-size:18px;
+                padding:10px;
+                border:none;
+                background:#d37777;
+                color:#62b693;
+                cursor:pointer;
+
+            }
+            #myBtn:hover{
+                background:#ddd;
+                color:black;
+            }
+            
+        </style>
+        </head>
+        <body>
+            <video autoplay muted loop id="myVideo">
+                <source src="c:\Users\LabUser\Downloads\WhatsApp Video 2024-05-29 at 10.30.10 PM.mp4" type="video/mp4">
+            your browser does not support HTML5 video.
+            </video>
+            <div class="content">
+                <center><h2>LOGIN</h2>
+                <lable for="UserName">UserName:</lable>
+            <br><input type="text" id="name" name="name" placeholder="passsword....."><br>
+        </center>
+        <button id="myBtn" on click="myFunction()">Pause</button>
+            </div>
+            <script>
+                var video= document.getElementsById("myVideo");
+                var btn=document.getElementsById("myBtn");
+                function myFunction(){
+                    if(video.paused) {
+                        video.play();
+                        btn.innerHTML="pause";
+                    } else {
+                        video.pause();
+                        btn.innerHTML="play";
+
+                    }
+                }            
+                </script>
+        </body>
+        </html>
